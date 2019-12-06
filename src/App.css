@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
+  text-align: center; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  scroll-behavior: smooth;
+  background-color: #180925; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+#root {
+  font-family: Roboto;
+  background-color: #180925; }
+  
+  
+  /* ------------Title.js------------ */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .heading {
+    text-align: center;
+    background-color: #21201E;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/1114a6f83369c55308cdc5e46f8e8ca8-970-80.jpg");
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    overflow-x: hidden; }
+    .heading h1 {
+      letter-spacing: 3px;
+      font-weight: 500;
+      font-size: 72px;
+      font-family: "Anton";
+      color: white;
+      width: 95%;
+      z-index: 3; }
+  
+  .key-solution {
+    width: 95%;
+    font-size: 36px;
+    padding-top: 18px;
+    font-family: "Roboto";
+    z-index: 3; }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .meteor {
+      
+      width: 60%;
+      z-index: 4;
+    }
+  
+  @media only screen and (max-width: 500px) {
+    .heading {
+      background-image: url("https://cdn.mos.cms.futurecdn.net/1114a6f83369c55308cdc5e46f8e8ca8-970-80.jpg");
+      background-attachment: scroll; }
+      .heading h1 {
+        font-size: 54px; }
+    .key-solution {
+      font-size: 27px; } }
