@@ -68,3 +68,47 @@ html {
         font-size: 54px; }
     .key-solution {
       font-size: 27px; } }
+
+      /*-------------- BodyHeader.js ------------*/
+      .body-header {
+        text-align: center;
+        background-color: #180925;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        width: 100%;
+        text-align: center;
+        color: #fc9e7c;
+        font-size: 36px;
+        position: relative;
+        z-index: 2;
+       }
+      
+      .body-header-text h2 {
+        font-weight: 900;
+        font-family: "Anton";
+        letter-spacing: 1px;
+        color: #fc9e7c;
+        margin-bottom: 0px;
+       }
+
+        /* --------------Footer.js--------------- */
+
+        .social-media {
+          margin: 72px auto;
+          margin-top: 72px;
+          margin-bottom: 18px;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content; 
+          z-index: 3;
+        }
+        
+        .social-icons {
+          z-index: 2;
+          margin: 20px; }
+        
+        .footer p {
+          z-index: 2;
+          text-align: center;
+          margin-bottom: 72px;
+          color: #fc9e7c; }

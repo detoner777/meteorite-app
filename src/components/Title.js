@@ -88,6 +88,7 @@ export class Title extends Component {
     return (
       <div className="heading" onScroll={e => this.handleScroll(e)}>
         <img
+          alt="meteor"
           className="meteor"
           src={this.state.width > 1000 ? meteor : meteor}
           style={{

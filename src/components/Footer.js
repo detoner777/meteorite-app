@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export class Footer extends Component {
   render() {
@@ -32,9 +34,9 @@ export class Footer extends Component {
           </a>
         </div>
         <p>
-          Handcrafted by ©{" "}
-          <a href="http://fromgaming.com/" target="_blank">
-            Ethan Vernon
+          {" "}
+          <a href="" target="_blank">
+            Alexey Lisenko
           </a>
         </p>
       </div>
