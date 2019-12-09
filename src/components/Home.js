@@ -4,6 +4,7 @@ import { Title } from "./Title";
 import { BodyHeader } from "./BodyHeader";
 import { Footer } from "./Footer";
 import { SearchAPI } from "./SearchAPI";
+import { ResultTable } from "./ResultTable";
 
 export class Home extends Component {
   // initialize our state
@@ -132,9 +133,7 @@ export class Home extends Component {
           handlePagination={this.handlePagination}
         />
 
-        <HelpText handleClick={this.handleExampleQuery} />
-
-        <ResultPre
+        <ResultTable
           searchResult={this.state.searchResult}
           pagination={this.state.pagination}
         />
