@@ -4,13 +4,13 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #180925; 
+  background-color:#0D0E09; 
   overflow-x:  hidden;
 }
 
 #root {
   font-family: Roboto;
-  background-color: #180925; 
+  background-color :#0D0E09; 
 }
   
   
@@ -19,7 +19,7 @@ html {
   .heading {
     text-align: center;
     background-color: #21201E;
-    background-image: url("https://cdn.mos.cms.futurecdn.net/1114a6f83369c55308cdc5e46f8e8ca8-970-80.jpg");
+    background-image: url(./img/bg.jpg);
     height: 100vh;
     overflow: hidden;
     width: 100%;
@@ -66,7 +66,7 @@ html {
   
   @media only screen and (max-width: 500px) {
     .heading {
-      background-image: url("https://cdn.mos.cms.futurecdn.net/1114a6f83369c55308cdc5e46f8e8ca8-970-80.jpg");
+      background-image: url(./img/bg.jpg);
       background-attachment: scroll; }
       .heading h1 {
         font-size: 54px; }
@@ -77,12 +77,12 @@ html {
       
       .body-header {
         text-align: center;
-        background-color: #180925;
+        background-color: #0D0E09;
         padding-top: 72px;
         padding-bottom: 72px;
         width: 100%;
         text-align: center;
-        color: #fc9e7c;
+        color: #EABA7F;
         font-size: 36px;
         position: relative;
         z-index: 2;
@@ -92,7 +92,7 @@ html {
         font-weight: 900;
         font-family: "Anton";
         letter-spacing: 1px;
-        color: #fc9e7c;
+        color: #EABA7F;
         margin-bottom: 0px;
        }
 
@@ -119,7 +119,7 @@ html {
           border-color: #fc9e7c !important; }
         .search-container .input-group-text {
           background-color: #212D40 !important;
-          border-color: #212D40;
+          border-color: #795E8A;
           color: #fc9e7c; }
         .search-container .form-control {
           background-color: #212D40;
@@ -277,8 +277,8 @@ html {
 
         .social-media {
           margin: 72px auto;
-          margin-top: 72px;
-          margin-bottom: 18px;
+          margin-top: 50px;
+          margin-bottom: 5px;
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content; 
@@ -287,11 +287,12 @@ html {
         
         .social-icons {
           z-index: 3;
-          margin: 20px; }
+          margin: 20px; 
+        }
         
         .footer p {
           z-index: 3;
           text-align: center;
-          margin-bottom: 72px;
+          margin-bottom: 22px;
           color: #fc9e7c;
          }

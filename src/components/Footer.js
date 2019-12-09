@@ -35,7 +35,7 @@ export class Footer extends Component {
         </div>
         <p>
           {" "}
-          <a href="" target="_blank">
+          <a href="https://t.me/Detoner777" target="_blank">
             Alexey Lisenko
           </a>
         </p>

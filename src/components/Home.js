@@ -7,8 +7,6 @@ import { SearchAPI } from "./SearchAPI";
 import { ResultTable } from "./ResultTable";
 
 export class Home extends Component {
-  // initialize our state
-
   constructor(props) {
     super(props);
 
@@ -54,14 +52,10 @@ export class Home extends Component {
       .get(formQuery)
       .then(data => {
         let searchResult = data.data;
+        //stackOwerflow magic    https://stackoverflow.com/questions/59247381/how-to-reformat-date-before-displaying-in-table/59247716#59247716
         for (let result of searchResult)
-          if (result["year"]) result["year"] = result["year"].split("T")[0];
-        // searchResult.forEach(function(arr) {
-        //   let newSearchResult = `id: ${arr.id}, mass: ${arr.mass}, fall: ${
-        //     arr.fall
-        //   }, name: ${arr.name}, year: ${arr.year + 1}`;
-        //   console.log(newSearchResult);
-        // });
+          if (result["year"])
+            result["year"] = result["year"].split("-01-01")[0];
 
         console.log(searchResult);
         //sets states which renders the result in the ResultPre component
@@ -78,7 +72,7 @@ export class Home extends Component {
         this.setState({ searchResult: "error", loading: "search" });
       })
       .then(data => {
-        //sets states which renders the result in the ResultPre component
+        //sets states which renders the result in the ResultTable component
         this.setState({ pagination: {} });
       });
   }
