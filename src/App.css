@@ -1,13 +1,17 @@
 .App {
-  text-align: center; }
+  text-align: center; 
+}
 
 html {
   scroll-behavior: smooth;
-  background-color: #180925; }
+  background-color: #180925; 
+  overflow-x:  hidden;
+}
 
 #root {
   font-family: Roboto;
-  background-color: #180925; }
+  background-color: #180925; 
+}
   
   
   /* ------------Title.js------------ */
@@ -42,7 +46,7 @@ html {
       letter-spacing: 3px;
       font-weight: 500;
       font-size: 72px;
-      font-family: "Anton";
+      font-family: "Roboto";
       color: white;
       width: 95%;
       z-index: 3; }
@@ -55,7 +59,7 @@ html {
     z-index: 3; }
 
     .meteor {
-      
+      transform: rotate(255deg);
       width: 60%;
       z-index: 4;
     }
@@ -92,6 +96,183 @@ html {
         margin-bottom: 0px;
        }
 
+       /*-----------------SearchAPI.js-----------------*/
+       
+       .search-container {
+        width: 95%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto; }
+        .search-container .btn-primary {
+          background-color: #703471;
+          border-color: #703471;
+          font-size: 18px !important;
+          width: 100px; }
+        .search-container .btn-primary:hover {
+          background-color: #fc9e7c;
+          border-color: #fc9e7c; }
+        .search-container .btn-primary:active {
+          background-color: #fc9e7c !important;
+          border-color: #fc9e7c !important; }
+        .search-container .btn-primary:focus {
+          background-color: #fc9e7c !important;
+          border-color: #fc9e7c !important; }
+        .search-container .input-group-text {
+          background-color: #212D40 !important;
+          border-color: #212D40;
+          color: #fc9e7c; }
+        .search-container .form-control {
+          background-color: #212D40;
+          border-color: #212D40;
+          text-align: center;
+          color: #fc9e7c;
+          font-size: 18px !important; }
+        .search-container .form-control:focus {
+          background-color: #364156;
+          border-color: #364156;
+          text-align: center;
+          color: #fc9e7c; }
+      
+      *:focus {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important; 
+      }
+      
+      ::-webkit-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fc9e7c !important;
+        opacity: 1;
+        /* Firefox */ 
+      }
+      
+      :-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fc9e7c !important;
+        opacity: 1;
+        /* Firefox */ 
+      }
+      
+      ::-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fc9e7c !important;
+        opacity: 1;
+        /* Firefox */ 
+      }
+      
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fc9e7c !important;
+        opacity: 1;
+        /* Firefox */ 
+      }
+      
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fc9e7c !important; 
+      }
+      
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #fc9e7c !important; 
+      }
+
+      /*------------------- ResultTable.js-------------------- */
+      
+      #result-output {
+        width: 95%;
+        max-width: 800px;
+        background-color: #212D40;
+        display: block;
+        word-break: break-all;
+        word-wrap: break-word;
+        border: 1px solid #703471;
+        margin-top: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+        line-height: 18px;
+        color: #fc9e7c; 
+      }
+        #result-output a {
+          color: #fc9e7c; }
+        #result-output tr {
+          background-color: #212D40; 
+        }
+        #result-output td {
+          color: #fc9e7c;
+          font-size: 18px; 
+        }
+        #result-output .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+          background: #364156; }
+        #result-output th {
+          color: #fc9e7c;
+          font-size: 36px; 
+        }
+        #result-output tbody {
+          background-color: #212D40; 
+        }
+        #result-output .ant-table-placeholder {
+          background-color: #212D40;
+          border-color: #703471; 
+        }
+        #result-output table {
+          border-bottom: 2px solid #703471 !important; }
+        #result-output .ant-empty-description {
+          color: #fc9e7c;
+          font-size: 18px; 
+        }
+        #result-output .ant-empty-image img {
+          content: url(./img/error.png) !important; 
+        }
+      
+      .ant-pagination-item-link {
+        background-color: #212D40 !important;
+        border-color: #703471 !important;
+       }
+      
+      .ant-pagination-item-link:hover {
+        color: #fc9e7c !important;
+        border-color: #fc9e7c !important;
+       }
+      
+      .ant-pagination-item {
+        background-color: #212D40 !important;
+        border-color: #703471 !important;
+       }
+        .ant-pagination-item a:hover {
+          color: #fc9e7c !important;
+         }
+      
+      .ant-pagination-item-link-icon {
+        color: #fc9e7c !important; }
+      
+      .ant-pagination-item-active {
+        border-color: #fc9e7c !important; }
+      
+      .ant-pagination-item:hover {
+        border-color: #fc9e7c !important; }
+      
+      .ant-pagination-item-ellipsis {
+        color: #703471 !important; }
+      
+      @media only screen and (max-width: 768px) {
+        .ant-table-header-column {
+          font-size: 25.2px;
+          font-weight: 600; } }
+      
+      @media only screen and (max-width: 500px) {
+        col:nth-child(2) {
+          width: 83px; }
+        col:nth-child(3) {
+          width: 94px; } }
+      
+      @media only screen and (max-width: 350px) {
+        .ant-table-header-column {
+          font-size: 20.7px; }
+        col:nth-child(2) {
+          width: 83px; }
+        col:nth-child(3) {
+          width: 95px; } }
         /* --------------Footer.js--------------- */
 
         .social-media {

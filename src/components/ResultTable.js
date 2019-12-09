@@ -17,6 +17,11 @@ const columns = [
     title: "Mass",
     dataIndex: "mass",
     key: "mass"
+  },
+  {
+    title: "Year",
+    dataIndex: "year",
+    key: "year"
   }
 ];
 

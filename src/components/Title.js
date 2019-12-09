@@ -35,8 +35,8 @@ export class Title extends Component {
     let scroll = parseInt(e.target.scrollingElement.scrollTop);
     let speedFactor = 1;
     let heightAdjust = 0;
-    let imageWidth = 180;
-    let startPos = 85;
+    let imageWidth = 120;
+    let startPos = 70;
     let newTop;
     let newLeft;
     let displayNoneVal = this.state.width;
@@ -44,7 +44,7 @@ export class Title extends Component {
     if (this.state.width < 700) {
       speedFactor = 0.4;
       heightAdjust = 130;
-      imageWidth = 84;
+      imageWidth = 10;
       startPos = -200;
       newLeft = scroll * 3.52 * speedFactor - 170;
       newTop = scroll * 1.5 * (speedFactor * 2.5) + startPos + heightAdjust;
@@ -90,13 +90,14 @@ export class Title extends Component {
         <img
           alt="meteor"
           className="meteor"
-          src={this.state.width > 1000 ? meteor : meteor}
+          src={this.state.width > 10000 ? meteor : meteor}
           style={{
             position: "absolute",
-            zIndex: 0,
+            width: "10%",
+            zIndex: 2,
             left: this.state.left,
             top: this.state.top,
-            opacity: this.state.opacity / 10,
+            opacity: this.state.opacity / 5,
             display: this.state.display
           }}
         />

@@ -21,7 +21,7 @@ export class Home extends Component {
 
     this.formGetData = this.formGetData.bind(this);
     this.handleFormChange = this.handleFormChange.bind(this);
-    this.handleExampleQuery = this.handleExampleQuery.bind(this);
+
     this.convertUserInputToQuery = this.convertUserInputToQuery.bind(this);
     this.handlePagination = this.handlePagination.bind(this);
   }
@@ -50,13 +50,23 @@ export class Home extends Component {
     this.setState({
       loading: "loading..."
     });
-
     axios
       .get(formQuery)
       .then(data => {
+        let searchResult = data.data;
+        for (let result of searchResult)
+          if (result["year"]) result["year"] = result["year"].split("T")[0];
+        // searchResult.forEach(function(arr) {
+        //   let newSearchResult = `id: ${arr.id}, mass: ${arr.mass}, fall: ${
+        //     arr.fall
+        //   }, name: ${arr.name}, year: ${arr.year + 1}`;
+        //   console.log(newSearchResult);
+        // });
+
+        console.log(searchResult);
         //sets states which renders the result in the ResultPre component
         this.setState({
-          searchResult: data.data,
+          searchResult: searchResult,
           loading: "search",
           pagination: { current: 1 }
         });
@@ -70,30 +80,6 @@ export class Home extends Component {
       .then(data => {
         //sets states which renders the result in the ResultPre component
         this.setState({ pagination: {} });
-      });
-  }
-
-  //sends a GET request for the example query
-  handleExampleQuery(query) {
-    //builds query from example query
-    var formQuery =
-      "https://data.nasa.gov/resource/gh4g-9sfh.json?$where=UPPER(name)like'%25BATTLE%25%25MOUNTAIN%25'";
-
-    this.setState({
-      userInput: query,
-      loading: "loading..."
-    });
-
-    axios
-      .get(formQuery)
-      .then(data => {
-        //sets states which renders the result in the ResultPre component
-        this.setState({ searchResult: data.data, loading: "search" });
-      })
-      .catch(err => {
-        //handle error
-        console.log(err);
-        this.setState({ searchResult: "error", loading: "search" });
       });
   }
 
