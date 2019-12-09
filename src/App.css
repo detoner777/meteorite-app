@@ -70,6 +70,7 @@ html {
       font-size: 27px; } }
 
       /*-------------- BodyHeader.js ------------*/
+      
       .body-header {
         text-align: center;
         background-color: #180925;
@@ -104,11 +105,12 @@ html {
         }
         
         .social-icons {
-          z-index: 2;
+          z-index: 3;
           margin: 20px; }
         
         .footer p {
-          z-index: 2;
+          z-index: 3;
           text-align: center;
           margin-bottom: 72px;
-          color: #fc9e7c; }
+          color: #fc9e7c;
+         }
