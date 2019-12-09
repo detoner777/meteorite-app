@@ -3,6 +3,7 @@ import axios from "axios";
 import { Title } from "./Title";
 import { BodyHeader } from "./BodyHeader";
 import { Footer } from "./Footer";
+import { SearchAPI } from "./SearchAPI";
 
 export class Home extends Component {
   // initialize our state
