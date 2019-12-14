@@ -99,34 +99,41 @@ html {
        /*-----------------SearchAPI.js-----------------*/
        
        .search-container {
-        width: 95%;
+        width: 50%;
         max-width: 800px;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto; 
+      }
         .search-container .btn-primary {
           background-color: #703471;
           border-color: #703471;
           font-size: 18px !important;
-          width: 100px; }
+          width: 100px; 
+        }
         .search-container .btn-primary:hover {
           background-color: #fc9e7c;
-          border-color: #fc9e7c; }
+          border-color: #fc9e7c; 
+        }
         .search-container .btn-primary:active {
           background-color: #fc9e7c !important;
-          border-color: #fc9e7c !important; }
+          border-color: #fc9e7c !important; 
+        }
         .search-container .btn-primary:focus {
           background-color: #fc9e7c !important;
-          border-color: #fc9e7c !important; }
+          border-color: #fc9e7c !important; 
+        }
         .search-container .input-group-text {
           background-color: #212D40 !important;
           border-color: #795E8A;
-          color: #fc9e7c; }
+          color: #fc9e7c; 
+        }
         .search-container .form-control {
           background-color: #212D40;
           border-color: #212D40;
           text-align: center;
           color: #fc9e7c;
-          font-size: 18px !important; }
+          font-size: 18px !important;
+         }
         .search-container .form-control:focus {
           background-color: #364156;
           border-color: #364156;
