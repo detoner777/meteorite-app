@@ -1,5 +1,6 @@
 .App {
   text-align: center; 
+  font-family: Roboto;
 }
 
 html {
@@ -72,6 +73,89 @@ html {
         font-size: 54px; }
     .key-solution {
       font-size: 27px; } }
+/*---------------------- Scroll animation---------------------- */
+      .scroll{
+        position: relative;
+        width: 24px;
+        height: 24px;
+      }
+
+      .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+      }
+      
+      .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+      }
+      
+      .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+      }
+      
+      .chevron:before,
+      .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #fff;
+      }
+      
+      .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+      }
+      
+      .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+      }
+      
+      @keyframes move {
+        25% {
+          opacity: 1;
+      
+        }
+        33% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        67% {
+          opacity: 1;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+      }
+      
+      .text {
+        display: block;
+        margin-top: 75px;
+        margin-left: -30px;
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: .25;
+        animation: pulse 2s linear alternate infinite;
+      }
+      
+      @keyframes pulse {
+        to {
+          opacity: 1;
+        }
+      }
+   
 
       /*-------------- BodyHeader.js ------------*/
       
@@ -99,12 +183,16 @@ html {
        /*-----------------SearchAPI.js-----------------*/
        
        .search-container {
-        width: 50%;
+        width: 26rem;
         max-width: 800px;
         margin-left: auto;
         margin-right: auto; 
+ 
       }
-        .search-container .btn-primary {
+    
+  
+      
+              .search-container .btn-primary {
           background-color: #703471;
           border-color: #703471;
           font-size: 18px !important;
@@ -145,43 +233,7 @@ html {
         box-shadow: none !important; 
       }
       
-      ::-webkit-input-placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fc9e7c !important;
-        opacity: 1;
-        /* Firefox */ 
-      }
-      
-      :-ms-input-placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fc9e7c !important;
-        opacity: 1;
-        /* Firefox */ 
-      }
-      
-      ::-ms-input-placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fc9e7c !important;
-        opacity: 1;
-        /* Firefox */ 
-      }
-      
-      ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fc9e7c !important;
-        opacity: 1;
-        /* Firefox */ 
-      }
-      
-      :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: #fc9e7c !important; 
-      }
-      
-      ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: #fc9e7c !important; 
-      }
+   
 
       /*------------------- ResultTable.js-------------------- */
       
@@ -201,12 +253,13 @@ html {
         color: #fc9e7c; 
       }
         #result-output a {
-          color: #fc9e7c; }
+          color: #f3d5ca; 
+        }
         #result-output tr {
           background-color: #212D40; 
         }
         #result-output td {
-          color: #fc9e7c;
+          color: #7cfcbc;
           font-size: 18px; 
         }
         #result-output .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {

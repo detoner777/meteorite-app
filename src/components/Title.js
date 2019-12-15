@@ -101,12 +101,13 @@ export class Title extends Component {
             display: this.state.display
           }}
         />
-        <h1>Meteorite Explorer App</h1>
-        <div className="key-solution">
-          <p>
-            Explore meteorite strikes across the globe by searching the
-            Meteorite Landing dataset on the Nasa Open Data Portal
-          </p>
+        <h1>Earth Meteorite Data</h1>
+        <div class="scroll">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text">Scroll down</span>
+          <a class="text" href="https://naegele.it"></a>
         </div>
       </div>
     );
