@@ -1,3 +1,5 @@
+App link https://5df74a8812535570f8f67da5--wizardly-nobel-08f61e.netlify.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
