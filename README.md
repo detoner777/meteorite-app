@@ -1,5 +1,9 @@
 App link https://5df74a8812535570f8f67da5--wizardly-nobel-08f61e.netlify.com/
 
+APP based on NASA public API comprehensive data set from The Meteoritical Society contains information on all of the known meteorite landings. 
+              The Fusion Table is collected by Javier de la Torre and we've also provided an XLS file that consists of 34,513 meteorites. 
+              Uses its own engine to search and render data.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
